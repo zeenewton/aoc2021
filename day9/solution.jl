@@ -139,7 +139,7 @@ function solution2(lines)
             end
         end
     end
-    total = 0
+
     crawled_basins = []
     for basin in basins
         append!(crawled_basins, length(crawl_basin(basin, val_matrix, num_rows, row_width)))
